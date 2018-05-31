@@ -142,7 +142,7 @@ while [ "$j" != "1" ]; do
                         n="1"
                     else
                         clear
-                        echo -e "\033[33mLa machine virtuelle est entrain de se supprimer, veuillez patienter !\033[0m"
+                        echo -e "\033[33mLa machine virtuelle est entrain de s'éteindre, veuillez patienter !\033[0m"
                         vagrant halt $id_vagrant >> log.txt
                         if [ $? = 1 ]; then
                             clear
